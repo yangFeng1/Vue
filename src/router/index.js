@@ -5,6 +5,7 @@ import index from '../components/index'
 import Person from '../components/personalCenter.vue'
 import music from '../components/music.vue'
 import ToDo from '../components/ToDo.vue'
+import home from '../components/home.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +31,10 @@ export default new Router({
         {
           path: '/index/ToDo',
           component: ToDo
+        },
+        {
+          path: '',
+          component: home
         }
       ]
     }
